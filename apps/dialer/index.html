@@ -41,10 +41,31 @@
     <link rel="stylesheet" type="text/css" href="../shared/style/option_menu.css">
 
     <!-- JS -->
+    <script src="../shared/test/unit/mocks/mock_mozContacts.js"></script>
+    <!--<script src="../shared/js/preload.js"></script>-->
+
+    <!-- Load the telephony stuff that was originally part of Gonk -->
+    <script src="../shared/js/gonk/ril_consts.js"></script>
+    <script src="../shared/js/gonk/idl/nsIMobileConnectionService.js"></script>
+    <script src="../shared/js/gonk/idl/nsITelephonyAudioService.js"></script>
+    <script src="../shared/js/gonk/idl/nsITelephonyService.js"></script>
+    <script src="../shared/js/gonk/idl/nsIIccService.js"></script>
+    <script src="../shared/js/gonk/idl/nsINetworkInterface.js"></script>
+    <script src="../shared/js/gonk/idl/nsIDataCallInterfaceService.js"></script>
+    <script src="../shared/js/gonk/systemlibs.js"></script>
+    <script src="../shared/js/gonk/RadioInterfaceLayer.js"></script>
+    <script src="../shared/js/gonk/TelephonyService.js"></script>
+    <script src="../shared/js/gonk/PhoneNumber.js/PhoneNumberMetadata.js"></script>
+    <script src="../shared/js/gonk/PhoneNumber.js/PhoneNumberNormalizer.js"></script>
+    <script src="../shared/js/gonk/PhoneNumber.js/PhoneNumber.js"></script>
+    <script src="../shared/js/gonk/DialNumberUtils.js"></script>
+        <script src="../shared/js/preload.js"></script>
+
+
     <script defer src="../shared/js/l10n.js"></script>
     <script defer src="../shared/js/lazy_loader.js"></script>
     <script defer src="../shared/js/font_size_utils.js"></script>
-    <script defer src="js/index.js"></script>
+    <script src="js/index.js"></script>
 
     <script defer src="../shared/js/dialer/dtmf_tone.js"></script>
     <script defer src="../shared/js/dialer/tone_player.js"></script>
@@ -53,7 +74,7 @@
     <script defer src="js/navigation.js"></script>
     <script defer src="js/contacts.js"></script>
     <script defer src="js/dialer.js"></script>
-    <script defer src="js/call_log.js"></script>
+    <script src="js/call_log.js"></script>
     <script defer src="js/call_log_db.js"></script>
     <script defer src="js/font_size_manager.js"></script>
     <script defer src="js/keypad.js"></script>
